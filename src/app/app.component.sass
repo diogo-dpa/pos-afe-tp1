@@ -1,0 +1,68 @@
+$main-color: #273dca
+$main-color-hover: #4b60ed
+
+.toolbar
+  width: 100%
+  padding: 32px 0px 48px 0px
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: $main-color
+
+.nav-items
+  width: 100%
+  margin-bottom: 32px
+
+.nav-items ul
+  width: 60%
+  margin: 0 auto
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+
+.toolbar-content
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.toolbar-content img
+  margin-right: 16px
+
+.main-content
+  width: 100%
+  margin-top: 48px
+
+.blog-section
+  max-width: 400px
+  margin: 0 auto
+
+.blog-title
+  font-size: 24px
+
+.blog-section li
+    padding: 8px 40px 16px 40px
+    cursor: pointer
+    transition: background 0.2s
+    border-radius: 10px
+    &:hover
+      background: transparentize($main-color-hover, 0.5)
+
+.blog-section li + li
+    margin-top: 8px
+
+.blog-section li h3
+    font-size: 18px
+
+.blog-section li p
+    font-size: 14px
+
+.see-more-button
+  cursor: pointer
+  background: none
+  border: none
+  font-weight: 600
+  font-size: 16px
+  color: $main-color
+  transition: color 0.2s
+  &:hover
+    color: $main-color-hover

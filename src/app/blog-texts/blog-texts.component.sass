@@ -1,0 +1,19 @@
+$main-color: #273dca
+$main-color-hover: #4b60ed
+
+.blog-component
+  padding: 8px 40px 16px 40px
+  cursor: pointer
+  transition: background 0.2s
+  border-radius: 10px
+  &:hover
+    background: transparentize($main-color-hover, 0.5)
+
+.blog-component + .blog-component
+    margin-top: 8px
+
+.blog-component h3
+    font-size: 18px
+
+.blog-component p
+    font-size: 14px
